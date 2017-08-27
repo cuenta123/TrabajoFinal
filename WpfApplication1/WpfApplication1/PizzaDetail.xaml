@@ -1,0 +1,39 @@
+﻿<Window x:Class="WpfApplication1.PizzaDetail"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="Pizza" Height="388.26" Width="300">
+    <Grid Background="AliceBlue">
+        <Image x:Name="image" HorizontalAlignment="Left" Height="69" Margin="10,25,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="171,0,0,0" TextWrapping="Wrap" Text="Ingredientes" VerticalAlignment="Top" FontSize="15" FontWeight="Bold"/>
+        <Label x:Name="label2" Content="Precio:" HorizontalAlignment="Left" Margin="171,98,0,0" VerticalAlignment="Top" FontSize="10" Width="43"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="10,101,0,0" TextWrapping="Wrap" Text="Deja tu comentario" VerticalAlignment="Top"/>
+        <ComboBox x:Name="puntuacion" HorizontalAlignment="Left" Margin="10,122,0,0" VerticalAlignment="Top" Width="120" Height="18" RenderTransformOrigin="0.853,3.278">
+            <ComboBoxItem Content="1 Estrella"></ComboBoxItem>
+            <ComboBoxItem Content="2 Estrellas"></ComboBoxItem>
+            <ComboBoxItem Content="3 Estrellas"></ComboBoxItem>
+            <ComboBoxItem Content="4 Estrellas"></ComboBoxItem>
+            <ComboBoxItem Content="5 Estrellas"></ComboBoxItem>
+        </ComboBox>
+        <TextBox x:Name="comentarioText" HorizontalAlignment="Left" Height="52" Margin="10,150,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="272"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="10,202,0,0" TextWrapping="Wrap" Text="Comentarios" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="10,223,0,0" TextWrapping="Wrap" Text="Usuario: " VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="10,244,0,0" TextWrapping="Wrap" Text="Fecha: " VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="182,231,0,0" TextWrapping="Wrap" Text="Puntuación: " VerticalAlignment="Top" Width="69"/>
+        <TextBox x:Name="lastComment" HorizontalAlignment="Left" Height="66" Margin="10,265,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="272"/>
+        <ListBox x:Name="ingredientsText" HorizontalAlignment="Left" Height="69" Margin="171,25,0,0" VerticalAlignment="Top" Width="111"/>
+        <Label x:Name="precioPizza" Content="5,00" HorizontalAlignment="Left" Margin="204,98,0,0" VerticalAlignment="Top" FontSize="10" RenderTransformOrigin="-1.6,0.819"/>
+        <Label x:Name="Precio_Copy" Content="€" HorizontalAlignment="Left" Margin="223,98,0,0" VerticalAlignment="Top" FontSize="10" RenderTransformOrigin="-1.6,0.819"/>
+        <Label x:Name="nombrePizza" Content="NombrePizza" HorizontalAlignment="Left" Margin="10,2,0,0" VerticalAlignment="Top" FontSize="10" Width="120"/>
+        <TextBlock x:Name="puntacion" HorizontalAlignment="Left" Margin="251,231,0,0" TextWrapping="Wrap" Text="5" VerticalAlignment="Top" Width="9"/>
+        <TextBlock x:Name="nombreUser" HorizontalAlignment="Left" Margin="62,223,0,0" TextWrapping="Wrap" Text="Usuario" VerticalAlignment="Top" Width="101"/>
+        <TextBlock x:Name="fechaText" HorizontalAlignment="Left" Margin="52,244,0,0" TextWrapping="Wrap" Text="21/10/2020" VerticalAlignment="Top" Width="101"/>
+
+
+
+
+    </Grid>
+</Window>

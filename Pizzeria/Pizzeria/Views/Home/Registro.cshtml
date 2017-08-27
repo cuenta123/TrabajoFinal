@@ -1,0 +1,22 @@
+﻿@model Pizzeria.Models.Usuario
+
+<table>
+@using (Html.BeginForm("Registro","Home", FormMethod.Post))
+{
+    <tr>
+        <th>
+          @Html.TextBoxFor(model => Model.Nombre)          
+        </th>
+        <th>
+          @Html.TextBoxFor(model => Model.Apellidos)  
+        </th>
+        <th>
+          @Html.TextBoxFor(model => Model.Email)
+        </th>
+        <th>
+          @Html.TextBoxFor(model => Model.Contraseña)
+        </th>
+        <input type="submit" value="Registrarse">
+    </tr>
+}
+    </table>

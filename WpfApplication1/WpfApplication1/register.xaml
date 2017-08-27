@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfApplication1.register"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="register" Height="370" Width="300" Background="AliceBlue">
+    <Border Background="#2e3137" CornerRadius="20" Margin="20">
+        <StackPanel Margin="20">
+            <Label Content="Register" Foreground="White" FontSize="25" HorizontalAlignment="Center"/>
+            <Separator></Separator>
+            <Label Content="Username" Foreground="White"/>
+            <TextBox Name="txtUsername" Background="#545d6a" Foreground="White" FontSize="18"/>
+            <Label Content="Email" Foreground="White"/>
+            <TextBox Name="txtEmail" Background="#545d6a" Foreground="White" FontSize="18"/>
+            <Label Content="Password" Foreground="White"/>
+            <PasswordBox Name="txtPassword" Background="#545d6a" Foreground="White" FontSize="18"/>
+            <Button Name="btnSubmit" Content="Submit" Margin="60 10" Background="#545d6a" Foreground="White"/>
+            <TextBlock HorizontalAlignment="Center" Width="212">
+    <Hyperlink Click="ViewLogin" Foreground="White">¿Ya está registrado?</Hyperlink>
+            </TextBlock>
+        </StackPanel>
+        </Border>
+</Window>

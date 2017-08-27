@@ -1,0 +1,24 @@
+﻿@using LinqToSql
+@using Pizzeria.Models
+
+@model Pizzeria.Models.Pizza
+
+<div class="Form-Login">
+    <h1>Pizzas</h1>
+    @{
+            MydbContex db = new MydbContex();
+            List<Pizza> pizzaList = db.Pizza.ToList();
+            int contador = 0;
+            foreach (var pizza in pizzaList)
+            {
+            contador++;
+            <div class='Pizza "@contador"'>
+                <p> @pizza.Nombre</p>
+                <p> @pizza.Precio</p>
+                <a href="/Pizzas/PizzaDetail?Id=@pizza.Id">
+                    <img src="@Url.Content(pizza.Foto)"  style="height:150px; width:150px;" /> Ver detalle
+                </a>
+            </div>       
+            }
+    }
+</div>

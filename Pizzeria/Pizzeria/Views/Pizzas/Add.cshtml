@@ -1,0 +1,13 @@
+﻿
+@using (Html.BeginForm("Add", "Pizzas", FormMethod.Post, new Dictionary<String, Object>()
+                                                            { {"enctype" , "multipart/form-data"} }))
+{
+    <label >Nombre</label>
+    <input type="text" name="Nombre" />
+    <label>Precio</label>
+    <input type="text" name="Precio"/>
+    <input type="file" name="file" />
+                    <input type="submit" name="enviar" />
+                    @Html.ValidationSummary()
+}
+
